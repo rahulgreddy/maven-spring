@@ -1,10 +1,10 @@
 env.mvnHome = '/usr/share/maven'
-node('maven-label') {
+node {
    
    
    stage('Preparation') { // for display purposes
       
-      git 'https://github.com/jglick/simple-maven-project-with-tests.git'
+      git 'https://github.com/rahulgreddy/simple-maven-project-with-tests.git'
         
       
    }
@@ -21,7 +21,7 @@ node('maven-label') {
       archive 'target/*.jar'
    }
    }
-node('mco-label'){
+node{
    stage("update th ecode in master"){
    sh "mco  r10k -f r10k.yml "
    }
