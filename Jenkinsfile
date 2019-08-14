@@ -4,7 +4,7 @@ node {
    
    stage('Preparation') { // for display purposes
       
-      git 'https://github.com/rahulgreddy/simple-maven-project-with-tests.git'
+      git 'https://github.com/rahulgreddy/simple-maven.git'
         
       
    }
